@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STP</title>
+    <link rel="icon" href="images/stp_logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <div class="container-fluid">
+    <div class="row">
+    <div class="col" id="SignIn">
+        <button type="button" id="signin" class="btn btn-dark">Sign In</button>
+        <form id="signin-form"  action="Signin.php" method="Post">
+            <div class="mb-3">
+              <label for="Email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="Email" name="Email" aria-describedby="emailHelp" required>
+            </div>
+            <div class="mb-3">
+              <label for="Password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="Password" name="password" required>
+            </div>
+            <button type="submit" class="btn btn-secondary" name="signin" id="in" disabled>Sign in</button>
+          </form>
+    </div>
+    <div class="col extra" id="SignUp">
+        <button type="button" id="signup" class="btn btn-light">Sign Up</button>
+        <form id="signup-form" action="Signup.php" method="Post" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label for="Name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="Name" aria-describedby="nameHelp" name="username" required>
+                <small id="name"></small>
+              </div>
+              <div class="mb-3">
+                <label for="comm" class="form-label">Committee Name</label>
+                <select id="comm" class="form-control" name="comm">
+                    <option value="selectcard" selected>Choose...</option>
+                    
+                      <option value="Software"> Software committee</option>
+                      <option value="Media">Media committee</option>
+                      <option value="Freelancing"> Freelancing committe </option>
+                  </select>
+                      <small id="comm"></small>
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="number" class="form-control" id="Phone" aria-describedby="emailHelp" name="phone" required>
+                <small id="number"></small>
+              </div>
+            <div class="mb-3">
+              <label for="Email1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp" name="email" required>
+              <small id="email"></small>
+            </div>
+
+            <div class="mb-3">
+              <label for="Password1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="Password1" name="password" required>
+              <small id="pass"></small>
+            </div>
+            <div class="mb-3">
+                <label for="Password2" class="form-label">Repete Password</label>
+                <input type="password" class="form-control" id="Password2" required>
+                <small id="repass"></small>
+              </div>
+
+              <div class="mb-3">
+              <label class="form-label" for="customFile">Upload Personal Image</label>
+               <input type="file" class="form-control" id="customFile" name="image1" required />
+            </div>
+            <button type="submit" name="signup" class="btn btn-secondary" id="up" disabled>Sign up</button>
+          </form>
+
+    </div>
+
+    </div>
+    
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+    <script src="JS/script.js"></script>  
+</body>
+</html>

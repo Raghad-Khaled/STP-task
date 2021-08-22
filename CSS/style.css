@@ -1,0 +1,96 @@
+body{
+    font-weight: bold;
+}
+#SignIn{
+padding: 10px 30px;
+background-color: white;
+/*animation-name: signinan;*/
+animation-duration: 5s;
+animation-delay: -1.5s;
+animation-fill-mode: forwards;
+height: 750px;
+}
+
+/*#signin-form{
+display: none;
+}*/
+#signup-form{
+display: none;
+}
+
+#SignUp{
+padding: 10px 30px;
+background-color: black;
+/*animation-name: signupan;*/
+animation-duration: 5s;
+animation-fill-mode: forwards;
+color: white;
+background-image:url(../images/76088.jpg);
+background-position: center;
+background-size: cover; 
+height: 750px;
+}
+
+.btn-dark,.btn-light{
+width: 100%;
+font-size: x-large;
+}
+
+.btn-secondary{
+margin-left: 45%;
+margin-top: 10px;
+}
+
+form {
+margin-top: 40px;
+}
+
+@keyframes signinan {
+    from {background-color: white;}
+    to {background-image:url(../images/5322708.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+    }
+  }
+
+  @keyframes signupan {
+    from {background-color: white;
+        height: 750px;
+    }
+    to {background-image:url(../images/76088.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        height: 750px;
+    }
+  }
+
+  small{
+      color: rgb(218, 2, 2);
+  }
+
+  .card{
+   width:fit-content;
+   margin: auto;
+   margin-top: 20px;
+   background-color: rgba(240, 248, 255, 0);
+   border: 0ch;
+   color: white;
+  }
+  .card-title{
+      text-align: center;
+      font-size: xx-large;
+  }
+  .card-img-top{
+     border-radius: 50%;
+   
+    width: 320px;
+    height: 320px;
+    margin: auto;}
+    .main{
+        background-image:url(../images/space.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+    }
